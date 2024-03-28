@@ -35,7 +35,7 @@ This template was tested on:
 
 - Copy content or download `apt_upgrade_agent_script.sh` script and move into host folder (Example): /etc/zabbix/custom_scripts
 
-	 `wget https://github.com/Moluss/zabbix-template-apt-upgrade-monitoring/tree/main/agent_scripts` 
+	 `wget https://github.com/cnunez007/zabbix-template-apt-upgrade-monitoring/blob/main/agent_scripts/apt_upgrade_agent_script.sh` 
  
 - Grant exec permissions 
 
@@ -43,4 +43,4 @@ This template was tested on:
 
 - Add entry to crontab (`sudo crontab -e`) to execute the script periodically to check for updates and then check for possible upgrades and send data to Zabbix Server. This cron will run every 12 hours:
 
-     `0 */12 * * * sh /etc/zabbix/custom_scripts/apt_upgrade_agent_script.sh 
+     0 */12 * * * sh /etc/zabbix/custom_scripts/apt_upgrade_agent_script.sh 
